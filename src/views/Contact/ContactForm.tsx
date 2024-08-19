@@ -1,4 +1,4 @@
-import { useState, useRef } from "react";
+import { useState } from "react";
 import emailjs from "@emailjs/browser";
 import {
   ContactFormTemplate,
@@ -10,18 +10,15 @@ import {
   ContactFormNameInput,
 } from "./Contact.style";
 import { CONTACTCONTENTS } from "constants/StringConstants";
-import ReCAPTCHA from "react-google-recaptcha";
 
 const ContactForm = ({ viewport }) => {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [stateMessage, setStateMessage] = useState(null);
-  const captchaRef = useRef(null);
 
   const sendEmail = (e) => {
     e.persist();
     e.preventDefault();
-    const token = captchaRef.current.getValue();
-    captchaRef.current.reset();
+
     setIsSubmitting(true);
 
     emailjs
@@ -106,10 +103,6 @@ const ContactForm = ({ viewport }) => {
       <ContactFormButton type="submit" disabled={isSubmitting}>
         {CONTACTCONTENTS.CONTACTFORMSUBMIT}
       </ContactFormButton>
-      {/* <ReCAPTCHA
-        sitekey={process.env.REACT_APP_RECAPTCHA_SITE_KEY}
-        ref={captchaRef}
-      /> */}
       {stateMessage && <p>{stateMessage}</p>}
     </ContactFormTemplate>
   );
