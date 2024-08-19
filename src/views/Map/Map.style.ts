@@ -10,7 +10,8 @@ const GoogleMap = styled.iframe`
     @media ${device.mobile} {
         margin: 30px 0;
         height: 250px;
-        border: 1px solid ${(props) => props.theme.palette.neutral.gray};
+        border-top: 1px solid ${(props) => props.theme.palette.neutral.gray};
+        border-bottom: 1px solid ${(props) => props.theme.palette.neutral.gray};
     }
 
     @media ${device.tablet} {
