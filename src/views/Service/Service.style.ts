@@ -26,13 +26,11 @@ export const ServiceHeaderTitle = styled.p`
     margin-top: 200px;
 
     @media ${device.mobile} {
-        margin-top: 100px;
         font-size: 35px;
         margin-bottom: 7px;
     }
 
     @media ${device.tablet} {
-        margin-top: 200px;
         font-size: 55px;
     }
 
@@ -108,7 +106,7 @@ export const ServiceItemContainer = styled.div`
     align-items: center;
 
     @media ${device.mobile} {
-        margin: 50px 0;
+        margin: 30px 0;
     }
 `
 

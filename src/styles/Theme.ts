@@ -12,6 +12,7 @@ export const theme: DefaultTheme = {
             black: "#000000",
             lightGray: "#f4f4f4",
             lightGrayHover: "#e8e8e8",
+            lightGrayButton:"#d7d7d7",
             gray: "#a2a9b0",
             grayHover: "#9199a1",
             darkGray: "#333333",

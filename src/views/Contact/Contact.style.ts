@@ -218,7 +218,7 @@ export const ContactFormNameContainer = styled.div`
 
 export const ContactFormLabel = styled.label`
     color: ${(props) => props.theme.palette.neutral.darkGray};
-    margin-left: 1px;
+    margin-left: 5px;
 `
 
 export const ContactFormLabelContainer = styled.div`
@@ -230,11 +230,9 @@ export const ContactFormLabelContainer = styled.div`
     margin: 10px 0;
 
     @media ${device.mobile} {
-        align-items: center;
     }
 
     @media ${device.tablet} {
-        align-items: flex-start;
     }
 `
 
@@ -246,6 +244,14 @@ export const ContactFormInput = styled.input`
     border: 1px solid ${(props) => props.theme.palette.neutral.lightGrayHover};
     margin: 5px 0;
     padding: 0 10px 0 10px;
+
+    @media ${device.mobile} {
+        width: 90%;
+    }
+
+    @media ${device.tablet} {
+        width: 100%;
+    }
 `
 export const ContactFormNameInput = styled.input`
     width: 100%;
@@ -258,26 +264,51 @@ export const ContactFormNameInput = styled.input`
 
     @media ${device.mobile} {
         max-width: 380px;
+        width: 90%;
     }
 
     @media ${device.tablet} {
         max-width: 170px;
+        width: 100%;
     }
 `
 
 export const ContactFormButton = styled.button`
-    width: 120px;
-    padding: 12px 0;
-    margin: 10px 0 25px 0;
-    border-radius: 10px;
-    border: 1px solid ${(props) => props.theme.palette.neutral.lightGrayHover};
-    /* border: none; */
-    box-shadow: 1px 1px 1px ${(props) => props.theme.palette.neutral.gray};
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  padding: 0.7rem 1.25rem;
+  font-weight: 400;
+  text-align: center;
+  background-color: ${(props) => props.theme.palette.neutral.lightGrayHover};
+  color: ${(props) => props.theme.palette.neutral.darkGray};
+  background-position: center;
+  transition: background 0.8s;
+  border-radius: 0.5em;
+  outline: 0;
+  border: none;
+  font-size: 1rem;
+  box-shadow: 0 0 0.3rem rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+ 
+  &:hover {
+    background: ${(props) => props.theme.palette.neutral.lightGrayButton}
+      radial-gradient(
+        circle,
+        transparent 1%,
+        ${(props) => props.theme.palette.neutral.lightGrayButton} 1%
+      )
+      center/15000%;
+  }
+  &:active {
     background-color: ${(props) => props.theme.palette.neutral.lightGray};
-    cursor: pointer;
-    &:hover{
-        /* background-color: ${(props) => props.theme.palette.neutral.lightGrayHover}; */
-        background-color: ${(props) => props.theme.palette.neutral.lightGrayHover};
-    }
-    transition: all 0.3s ease-out;
+    transition: background-color 0.5s ease-out;
+    background-size: 100%;
+    /* transition: background 0s; */
+    transform: scale(0.95);
+    transition: transform 0.1s;
+  }
 `

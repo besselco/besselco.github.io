@@ -31,7 +31,7 @@ const GoogleMap = styled.iframe`
 
 export const BreakLine = styled.hr`
     width: 70%;
-    color: ${(props) => props.theme.palette.neutral.darkGray};
+    border-color: ${(props) => props.theme.palette.neutral.lightGray};
 `
 
 export default GoogleMap;
