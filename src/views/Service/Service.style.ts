@@ -112,9 +112,16 @@ export const ServiceItemContainer = styled.div`
     }
 `
 
-export const ServiceIconContainer = styled.div``
+export const ServiceIconContainer = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+`
 
-export const ServiceIcon = styled.img``
+export const ServiceIcon = styled.img`
+    width: 50%;
+`
 
 export const ServiceItemTitle = styled.p`
     font-size: 20px;

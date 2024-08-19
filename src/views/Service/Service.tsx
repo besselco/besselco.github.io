@@ -13,6 +13,10 @@ import {
 } from "./Service.style";
 import { SERVICECONTENTS } from "constants/StringConstants";
 import { useInView } from "react-intersection-observer";
+import Marketing from "assets/images/marketing.png";
+import Warehouse from "assets/images/warehouse.png";
+import Ecommerce from "assets/images/ecommerce.png";
+import Brand from "assets/images/brand-awareness.png";
 
 const Service = () => {
   const { ref, inView } = useInView({
@@ -38,7 +42,7 @@ const Service = () => {
       >
         <ServiceItemContainer>
           <ServiceIconContainer>
-            <ServiceIcon />
+            <ServiceIcon src={Warehouse} />
           </ServiceIconContainer>
           <ServiceItemTitle>
             {SERVICECONTENTS.DISTRIBUTION_TITLE}
@@ -50,7 +54,7 @@ const Service = () => {
 
         <ServiceItemContainer>
           <ServiceIconContainer>
-            <ServiceIcon />
+            <ServiceIcon src={Ecommerce} />
           </ServiceIconContainer>
           <ServiceItemTitle>{SERVICECONTENTS.ECOMMERCE_TITLE}</ServiceItemTitle>
           <ServiceItemDescription>
@@ -60,7 +64,7 @@ const Service = () => {
 
         <ServiceItemContainer>
           <ServiceIconContainer>
-            <ServiceIcon />
+            <ServiceIcon src={Brand} />
           </ServiceIconContainer>
           <ServiceItemTitle>{SERVICECONTENTS.EXPANSION_TITLE}</ServiceItemTitle>
           <ServiceItemDescription>
@@ -70,7 +74,7 @@ const Service = () => {
 
         <ServiceItemContainer>
           <ServiceIconContainer>
-            <ServiceIcon />
+            <ServiceIcon src={Marketing} />
           </ServiceIconContainer>
           <ServiceItemTitle>{SERVICECONTENTS.MARKETING_TITLE}</ServiceItemTitle>
           <ServiceItemDescription>
