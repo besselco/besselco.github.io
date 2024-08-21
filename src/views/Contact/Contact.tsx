@@ -10,23 +10,23 @@ import {
   ContactFormContainer,
   ContactContentContainer,
   ContactInfoIcons,
-  SocialIcons,
+  // SocialIcons,
   ContactMailtoLink,
-  SocialIconsLink,
+  // SocialIconsLink,
 } from "./Contact.style";
 import {
   faLocationDot,
   faPhone,
   faEnvelope,
-  faThumbsUp,
+  // faThumbsUp,
 } from "@fortawesome/free-solid-svg-icons";
 
-import {
-  faSquareFacebook,
-  faSquareTwitter,
-  faLinkedin,
-  faSquareInstagram,
-} from "@fortawesome/free-brands-svg-icons";
+// import {
+//   faSquareFacebook,
+//   faSquareTwitter,
+//   faLinkedin,
+//   faSquareInstagram,
+// } from "@fortawesome/free-brands-svg-icons";
 import { CONTACTCONTENTS } from "constants/StringConstants";
 import ContactForm from "./ContactForm";
 

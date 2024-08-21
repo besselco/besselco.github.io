@@ -12,11 +12,9 @@ const NavbarItemList = () => {
     <NavbarItemsList>
       <NavbarItemsContainer>
         {NavbarConstants.navItem.map((item: INavItem) => (
-          <NavbarItem key={item.name}>
-            <Link activeClass="active" smooth spy to={item.route}>
-              {item.name}
-            </Link>
-          </NavbarItem>
+          <Link activeClass="active" smooth spy to={item.route}>
+            <NavbarItem key={item.name}>{item.name}</NavbarItem>
+          </Link>
         ))}
       </NavbarItemsContainer>
     </NavbarItemsList>
