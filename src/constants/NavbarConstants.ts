@@ -10,10 +10,6 @@ export interface INavbar {
 export const navbar: INavbar = {
     navItem: [
         {
-            name: "Home",
-            route: "home"
-        },
-        {
             name: "About",
             route: "about"
         },
