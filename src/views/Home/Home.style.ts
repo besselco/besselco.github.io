@@ -99,7 +99,7 @@ export const HomeLinkContainer = styled.div`
 export const HomeLinkText = styled(Link)`
     font-family: "Poppins";
     font-size: 18px;
-    font-weight: 600;
+    font-weight: 500;
     color: ${(props) => props.theme.palette.primary[300]};
     text-decoration: underline;
     padding: 20px 0;

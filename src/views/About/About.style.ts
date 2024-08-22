@@ -432,6 +432,7 @@ export const AboutSubLogoContainer = styled.a`
     }
 
     @media ${device.desktop} {
+        padding: 0;
         min-height: 200px;
         width: 20%;
     }

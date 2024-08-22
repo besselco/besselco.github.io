@@ -23,7 +23,7 @@ export const ServiceHeaderContainer = styled.div`
 export const ServiceHeaderTitle = styled.p`
     font-weight: 600;
     color: ${(props) => props.theme.palette.neutral.black};
-    margin-top: 200px;
+    margin-top: 100px;
 
     @media ${device.mobile} {
         font-size: 35px;

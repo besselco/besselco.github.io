@@ -41,6 +41,7 @@ export const ContactTitleContainer = styled.div`
     }
 
     @media ${device.desktop} {
+        width: 45%;
     }
 
     @media ${device.bigScreen} {
