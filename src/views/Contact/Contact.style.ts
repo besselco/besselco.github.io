@@ -88,6 +88,7 @@ export const ContactContentContainer = styled.div`
     }
 
     @media ${device.desktop} {
+        width: 45%;
     }
 
     @media ${device.bigScreen} {
@@ -100,6 +101,10 @@ export const ContactInfoContainer = styled.div`
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
+
+    @media ${device.laptop} {
+        padding-right: 40px;
+    }
 `
 
 export const ContactInfoItemContainer = styled.div`

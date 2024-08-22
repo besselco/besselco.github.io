@@ -3,7 +3,7 @@ export const size = {
     tablet: "768",
     laptop: "1080",
     desktop: "1440",
-    bigScreen: "2000",
+    bigScreen: "1980",
 }
 
 export const device = {

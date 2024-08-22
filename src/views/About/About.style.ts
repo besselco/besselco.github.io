@@ -216,34 +216,168 @@ export const AboutContentItem = styled.p`
     }
 `
 
+// export const AboutLogoContainer = styled.div`
+//     margin-top: 100px;
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: flex-start;
+//     align-items: center;
+
+//     @media ${device.mobile} {
+//         width: 100%;
+//     }
+
+//     @media ${device.tablet} {
+//         width: 90%;
+//     }
+
+//     @media ${device.laptop} {
+//         width: 70%;
+//     }
+
+//     @media ${device.desktop} {
+//         width: 70%;
+//     }
+    
+// `
+
+// export const AboutSubLogoGroupContainer = styled.div`
+//     display: flex;
+//     justify-content: space-evenly;
+//     opacity: 0;
+
+//     &.mountAnimation{
+//         animation: 1.5s ease-in-out 0s 1 fadeUp forwards;
+//     }
+
+//     @media ${device.mobile} {
+//         flex-direction: column;
+//         min-height: 500px;
+//         align-items: center;
+//     }
+
+//     @media ${device.tablet} {
+//         display:grid;
+//         grid-template-columns: 50% 50%;
+//         grid-row: auto auto;
+//         grid-column-gap: 20px;
+//         grid-row-gap: 20px;
+//     }
+
+//     @media ${device.laptop} {
+
+//     }
+
+//     @media ${device.desktop} {
+//         display: flex;
+//         flex-direction: row;
+//         justify-content: center;
+//         margin-top: 30px;
+//         min-height: 150px;
+//         max-width: 80%;
+//         width: 80%;
+//     }
+// `
+
+// export const AboutSubLogoContainer = styled.a`
+//     padding: 10px;
+//     cursor: pointer;
+//     /* min-width: 290px; */
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+
+//     @media ${device.mobile} {
+//         min-height: 100px;
+//     }
+
+//     @media ${device.tablet} {
+//         min-height: initial;
+//     }
+
+//     @media ${device.laptop} {
+//         /* min-width: 350px; */
+//         min-height: 100px;
+//     }
+
+//     @media ${device.desktop} {
+//         min-width: 290px;
+//         min-height: initial;
+//     }
+// `
+
+// export const AboutBesselLogo = styled.img`
+//     max-width: 80%;
+//     padding: 50px;
+//     opacity: 0;
+//     &.mountAnimation{
+//         animation: 1.5s ease-in-out 0s 1 fadeUp forwards;
+//     }
+
+//     @media ${device.mobile} {
+//         width: 90%;
+//         padding: 50px 0;
+//     }
+
+//     @media ${device.tablet} {
+//         padding: 50px;
+//         width: 100%;
+//     }
+
+//     @media ${device.desktop} {
+//         /* max-width: 100%; */
+//     }
+// `
+
+// export const AboutSubLogo = styled.img`
+
+//     transition: all 0.3s ease-in-out;
+
+//     @media ${device.mobile} {
+//         width: 50%;
+//         &:hover {
+//             width: 60%;
+//         }
+//     }
+
+//     @media ${device.tablet} {
+//         width: 90%;
+//     &:hover{
+//         width: 290px;
+//     }
+//     }
+// `
+// export const AboutSubLogoResize = styled.img`
+//     &:hover{
+//         width: 60%;
+//     }
+//     transition: all 0.3s ease-in-out;
+
+//     @media ${device.mobile} {
+//         width: 30%;
+//     }
+
+//     @media ${device.tablet} {
+//         width: 50%;
+//     }
+// `
+
+
 export const AboutLogoContainer = styled.div`
-    margin-top: 100px;
+    padding-top: 100px;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
     align-items: center;
-
-    @media ${device.mobile} {
-        width: 100%;
-    }
-
-    @media ${device.tablet} {
-        width: 90%;
-    }
-
-    @media ${device.laptop} {
-        width: 70%;
-    }
-
-    @media ${device.desktop} {
-        width: 90%;
-    }
-    
+    width: 100%;
 `
 
 export const AboutSubLogoGroupContainer = styled.div`
+    width: 50%;
     display: flex;
-    justify-content: space-evenly;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
     opacity: 0;
 
     &.mountAnimation{
@@ -252,16 +386,16 @@ export const AboutSubLogoGroupContainer = styled.div`
 
     @media ${device.mobile} {
         flex-direction: column;
-        min-height: 500px;
-        align-items: center;
+        width: 100%;
     }
 
     @media ${device.tablet} {
-        display:grid;
-        grid-template-columns: 50% 50%;
-        grid-row: auto auto;
-        grid-column-gap: 20px;
-        grid-row-gap: 20px;
+         display:grid;
+         grid-template-columns: 50% 50%;
+         grid-row: auto auto;
+         grid-column-gap: 20px;
+         grid-row-gap: 20px;
+         width: 70%;
     }
 
     @media ${device.laptop} {
@@ -270,88 +404,73 @@ export const AboutSubLogoGroupContainer = styled.div`
 
     @media ${device.desktop} {
         display: flex;
-        justify-content: space-evenly;
-        margin-top: 30px;
         flex-direction: row;
-        min-height: 150px;
+        width: 50%;
     }
 `
 
 export const AboutSubLogoContainer = styled.a`
-    padding: 10px;
-    cursor: pointer;
-    min-width: 290px;
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 20%;
+    min-height: 200px;
+    padding: 50px 0;
+    cursor: pointer;
 
     @media ${device.mobile} {
-        min-height: 100px;
+        min-height: 0;
+        width: 40%;
     }
 
     @media ${device.tablet} {
-        min-height: initial;
+        width: 90%;
     }
 
     @media ${device.laptop} {
-        min-width: 350px;
-        min-height: 100px;
+
     }
 
     @media ${device.desktop} {
-        min-width: 290px;
-        min-height: initial;
+        min-height: 200px;
+        width: 20%;
     }
 `
 
 export const AboutBesselLogo = styled.img`
-    max-width: 1150px;
-    padding: 50px;
+    width: 50%;
     opacity: 0;
+
     &.mountAnimation{
         animation: 1.5s ease-in-out 0s 1 fadeUp forwards;
     }
 
     @media ${device.mobile} {
-        width: 90%;
+        width: 80%;
         padding: 50px 0;
     }
 
-    @media ${device.tablet} {
-        padding: 50px;
-        width: 100%;
+    @media ${device.laptop} {
+
+    }
+
+    @media ${device.desktop} {
+        width: 50%;
     }
 `
 
 export const AboutSubLogo = styled.img`
-
+    width: 100%;
+    &:hover {
+        transform: scale(1.2);
+    }
     transition: all 0.3s ease-in-out;
 
-    @media ${device.mobile} {
-        width: 50%;
-        &:hover {
-            width: 60%;
-        }
-    }
-
-    @media ${device.tablet} {
-        width: 256px;
-    &:hover{
-        width: 290px;
-    }
-    }
 `
 export const AboutSubLogoResize = styled.img`
-    &:hover{
-        width: 150px;
+    width: 60%;
+    &:hover {
+        transform: scale(1.2);
     }
     transition: all 0.3s ease-in-out;
-
-    @media ${device.mobile} {
-        width: 100px;
-    }
-
-    @media ${device.tablet} {
-        width: 120px;
-    }
 `
