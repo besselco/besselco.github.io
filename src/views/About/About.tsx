@@ -98,10 +98,7 @@ const About = () => {
             <AboutSubLogoC24 src={CentellianLogo} />
           </AboutSubLogoContainer>
 
-          <AboutSubLogoContainer
-            target="_blank"
-            href="https://www.wdressroomusa.com"
-          >
+          <AboutSubLogoContainer href="/">
             <AboutSubLogoBDI src={BDILogo} />
           </AboutSubLogoContainer>
         </AboutSubLogoGroupContainer>
