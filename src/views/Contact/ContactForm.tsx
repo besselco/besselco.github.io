@@ -71,13 +71,23 @@ const ContactForm = ({ viewport }) => {
             <ContactFormLabel htmlFor="fname">
               {CONTACTCONTENTS.CONTACTFORMFNAME}
             </ContactFormLabel>
-            <ContactFormNameInput type="text" id="fname" name="fname" />
+            <ContactFormNameInput
+              type="text"
+              id="fname"
+              name="fname"
+              required
+            />
           </ContactFormLabelContainer>
           <ContactFormLabelContainer>
             <ContactFormLabel htmlFor="lname">
               {CONTACTCONTENTS.CONTACTFORMLNAME}
             </ContactFormLabel>
-            <ContactFormNameInput type="text" id="lname" name="lname" />
+            <ContactFormNameInput
+              type="text"
+              id="lname"
+              name="lname"
+              required
+            />
           </ContactFormLabelContainer>
         </>
       )}

@@ -37,7 +37,7 @@ export const ContactTitleContainer = styled.div`
 
     @media ${device.laptop} {
         display: initial;
-        width: 85%;
+        width: 70%;
     }
 
     @media ${device.desktop} {

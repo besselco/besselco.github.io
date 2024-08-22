@@ -415,16 +415,17 @@ export const AboutSubLogoContainer = styled.a`
     align-items: center;
     width: 20%;
     min-height: 200px;
-    padding: 50px 0;
+    padding: 25px 0;
     cursor: pointer;
 
     @media ${device.mobile} {
         min-height: 0;
-        width: 40%;
+        width: 55%;
     }
 
     @media ${device.tablet} {
         width: 90%;
+        padding: 50px 0;
     }
 
     @media ${device.laptop} {
@@ -460,16 +461,31 @@ export const AboutBesselLogo = styled.img`
     }
 `
 
-export const AboutSubLogo = styled.img`
-    width: 100%;
+export const AboutSubLogoC24 = styled.img`
+    width: 80%;
     &:hover {
         transform: scale(1.2);
     }
     transition: all 0.3s ease-in-out;
 
 `
-export const AboutSubLogoResize = styled.img`
-    width: 60%;
+export const AboutSubLogoBDI = styled.img`
+    width: 30%;
+    &:hover {
+        transform: scale(1.2);
+    }
+    transition: all 0.3s ease-in-out;
+`
+
+export const AboutSubLogoMadeca = styled.img`
+    width: 100%;
+    &:hover {
+        transform: scale(1.2);
+    }
+    transition: all 0.3s ease-in-out;
+`
+export const AboutSubLogoWD = styled.img`
+    width: 70%;
     &:hover {
         transform: scale(1.2);
     }

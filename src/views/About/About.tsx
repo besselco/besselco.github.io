@@ -15,8 +15,10 @@ import {
   AboutSubLogoGroupContainer,
   AboutSubLogoContainer,
   AboutBesselLogo,
-  AboutSubLogo,
-  AboutSubLogoResize,
+  AboutSubLogoC24,
+  AboutSubLogoBDI,
+  AboutSubLogoMadeca,
+  AboutSubLogoWD,
 } from "./About.style";
 import SectionContainer from "styles/SectionContainer.style";
 import { ABOUTCONTENTS } from "constants/StringConstants";
@@ -24,7 +26,7 @@ import BesselLogo from "assets/images/BesselCo-Logo.png";
 import CentellianLogo from "assets/images/centellian24_logo.png";
 import MadecaLogo from "assets/images/Madeca_Derma_Logo_Icon_blk.png";
 import WDLogo from "assets/images/wdressroom_logo_blk1.png";
-import BDILogo from "assets/images/BDI LOGO.png";
+import BDILogo from "assets/images/BDI.png";
 import { useInView } from "react-intersection-observer";
 
 const About = () => {
@@ -82,25 +84,25 @@ const About = () => {
             target="_blank"
             href="https://www.wdressroomusa.com"
           >
-            <AboutSubLogo src={WDLogo} />
+            <AboutSubLogoWD src={WDLogo} />
           </AboutSubLogoContainer>
 
           <AboutSubLogoContainer target="_blank" href="https://www.madeca.com">
-            <AboutSubLogo src={MadecaLogo} />
+            <AboutSubLogoMadeca src={MadecaLogo} />
           </AboutSubLogoContainer>
 
           <AboutSubLogoContainer
             target="_blank"
             href="https://www.centellian24usa.com"
           >
-            <AboutSubLogo src={CentellianLogo} />
+            <AboutSubLogoC24 src={CentellianLogo} />
           </AboutSubLogoContainer>
 
           <AboutSubLogoContainer
             target="_blank"
             href="https://www.wdressroomusa.com"
           >
-            <AboutSubLogoResize src={BDILogo} />
+            <AboutSubLogoBDI src={BDILogo} />
           </AboutSubLogoContainer>
         </AboutSubLogoGroupContainer>
       </AboutLogoContainer>

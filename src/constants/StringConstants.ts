@@ -39,8 +39,8 @@ export const CONTACTCONTENTS = {
     CONTACTADDRESS: "802 Mittel Dr, Wood Dale, IL 60191",
     CONTACTPHONE: "1-888-912-0028",
     CONTACTEMAIL: "sales@besselco.com",
-    CONTACTFORMFNAME: "First Name",
-    CONTACTFORMLNAME: "Last Name",
+    CONTACTFORMFNAME: "First Name *",
+    CONTACTFORMLNAME: "Last Name *",
     CONTACTFORMEMAIL: "Email *",
     CONTACTFORMMESSAGE: "Message *",
     CONTACTFORMSUBMIT: "Submit"
