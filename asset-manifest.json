@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.8a685450.css",
-    "main.js": "/static/js/main.f733991c.js",
+    "main.js": "/static/js/main.0362e4e4.js",
     "static/media/centellian24_logo.png": "/static/media/centellian24_logo.c35b197d0f197e5e8966.png",
     "static/media/Madeca_Derma_Logo_Icon_blk.png": "/static/media/Madeca_Derma_Logo_Icon_blk.df99462acbbb2f9d0004.png",
     "static/media/BesselCo-Logo.png": "/static/media/BesselCo-Logo.11ac6ffe333c32731414.png",
@@ -12,10 +12,10 @@
     "static/media/BDI.png": "/static/media/BDI.3af4d1827d84cda967ba.png",
     "index.html": "/index.html",
     "main.8a685450.css.map": "/static/css/main.8a685450.css.map",
-    "main.f733991c.js.map": "/static/js/main.f733991c.js.map"
+    "main.0362e4e4.js.map": "/static/js/main.0362e4e4.js.map"
   },
   "entrypoints": [
     "static/css/main.8a685450.css",
-    "static/js/main.f733991c.js"
+    "static/js/main.0362e4e4.js"
   ]
 }
