@@ -405,6 +405,9 @@ export const AboutSubLogoGroupContainer = styled.div`
     @media ${device.desktop} {
         display: flex;
         flex-direction: row;
+    }
+
+    @media ${device.bigScreen} {
         width: 50%;
     }
 `
@@ -457,12 +460,16 @@ export const AboutBesselLogo = styled.img`
     }
 
     @media ${device.desktop} {
+        width: 65%;
+    }
+
+    @media ${device.bigScreen} {
         width: 50%;
     }
 `
 
 export const AboutSubLogoC24 = styled.img`
-    width: 80%;
+    width: 85%;
     &:hover {
         transform: scale(1.2);
     }
@@ -470,7 +477,7 @@ export const AboutSubLogoC24 = styled.img`
 
 `
 export const AboutSubLogoBDI = styled.img`
-    width: 30%;
+    width: 35%;
     &:hover {
         transform: scale(1.2);
     }
