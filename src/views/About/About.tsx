@@ -16,7 +16,7 @@ import {
   AboutSubLogoContainer,
   AboutBesselLogo,
   AboutSubLogoC24,
-  AboutSubLogoBDI,
+  AboutSubLogoBDIS,
   AboutSubLogoMadeca,
   AboutSubLogoWD,
 } from "./About.style";
@@ -26,7 +26,7 @@ import BesselLogo from "assets/images/BesselCo-Logo.png";
 import CentellianLogo from "assets/images/centellian24_logo.png";
 import MadecaLogo from "assets/images/Madeca_Derma_Logo_Icon_blk.png";
 import WDLogo from "assets/images/wdressroom_logo_blk1.png";
-import BDIS_logo from "assets/images/BDIS_logo.png";
+import BDISLogo from "assets/images/BDIS_logo.png";
 import { useInView } from "react-intersection-observer";
 
 const About = () => {
@@ -98,8 +98,11 @@ const About = () => {
             <AboutSubLogoC24 src={CentellianLogo} />
           </AboutSubLogoContainer>
 
-          <AboutSubLogoContainer href="https://www.bdidist.com">
-            <AboutSubLogoBDI src={BDILogo} />
+          <AboutSubLogoContainer 
+            target="_blank"
+            href="https://www.bdidist.com"
+            >
+            <AboutSubLogoBDIS src={BDISLogo} />
           </AboutSubLogoContainer>
         </AboutSubLogoGroupContainer>
       </AboutLogoContainer>
