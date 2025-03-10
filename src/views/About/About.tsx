@@ -26,7 +26,7 @@ import BesselLogo from "assets/images/BesselCo-Logo.png";
 import CentellianLogo from "assets/images/centellian24_logo.png";
 import MadecaLogo from "assets/images/Madeca_Derma_Logo_Icon_blk.png";
 import WDLogo from "assets/images/wdressroom_logo_blk1.png";
-import BDILogo from "assets/images/BDIS_logo.png";
+import BDIS_logo from "assets/images/BDIS_logo.png";
 import { useInView } from "react-intersection-observer";
 
 const About = () => {
