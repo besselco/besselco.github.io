@@ -215,7 +215,7 @@ export const AboutContentItem = styled.p`
         padding-right: 20px;
     }
 `
-// export const AboutLogoContainer = styled.dic'
+
 // export const AboutLogoContainer = styled.div`
 //     margin-top: 100px;
 //     display: flex;
