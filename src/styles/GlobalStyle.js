@@ -2,7 +2,7 @@ import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyle = createGlobalStyle`
     body {
-        font-family: "Helvetica";
+        font-family: "Poppins";
         font-size: 14px;
         font-weight: 400;
         margin: 0;
